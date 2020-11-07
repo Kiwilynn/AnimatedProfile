@@ -1,0 +1,50 @@
+p{
+    margin: 4px;
+}
+.MainDiv{
+
+    height: 18em;
+    width: 15em;
+    text-align: center;
+    transition-duration: 200ms;
+    
+}
+
+.MainDiv:hover{
+    height: 26em;
+    width: 17em;
+    transition-duration: 500ms;
+    box-shadow: 1px 1px 7px 2px black;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: 1000;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.undertitle{
+    font-weight: 700;
+}
+
+.MainDiv img {
+    height: auto;
+    width: 100%;
+}
+
+.MainDiv:hover img{
+
+    content: url(LineSomGif.gif); 
+}
+
+.hidden{
+    display: none;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.MainDiv:hover .hidden{
+
+    display:inherit;
+    transition-duration: 500ms;
+}
