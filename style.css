@@ -1,7 +1,6 @@
 body{
     margin: 0px;
-    font-family:'Lato',Helvetica,Arial,Lucida,sans-serif
-
+    font-family:'Lato',Helvetica,Arial,Lucida,sans-serif;
 }
 
 
@@ -174,7 +173,28 @@ margin-left: 50%;
     text-align-last: justify;
 }
 
+.background2{
+    margin-top: 5em;
+    background-image: url(black-and-white-pagoda.png);
+    position: sticky;
+    background-size: cover;
+    z-index: -10;
+    width: 700px;
+    height: 800px;
+    
+}
 
+.backgroundOverlay2{
+background-image: url(sight-seeing-45.png);
+position: absolute;
+z-index: -2;
+background-size: cover;
+width: 700px;
+height: 800px;
+
+
+
+}
 
 
 
