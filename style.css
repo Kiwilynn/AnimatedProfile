@@ -181,7 +181,6 @@ margin-left: 50%;
     z-index: -10;
     width: 700px;
     height: 800px;
-    
 }
 
 .backgroundOverlay2{
@@ -191,12 +190,36 @@ z-index: -2;
 background-size: cover;
 width: 700px;
 height: 800px;
-
-
-
 }
 
 
+.aboutUs{
+    z-index: -5;
+    position: absolute;
+    display: block;
+    background-color:#E02B20 ;
+    float: right;
+    height: 60em;
+    width: 50%;
+    right:0;
+    transform: translateY(-200px);
+
+}
+
+.clubPicture{
+    z-index: -2;
+    position: absolute;
+    border: 5px solid white;
+    max-width: 60%;
+    box-shadow: -10px 10px 30px 0px darkgray;
+    
+}
+
+.aboutUsContainer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
 
 
 
@@ -247,4 +270,13 @@ height: 800px;
 
     display:inherit;
     transition-duration: 500ms;
+}
+
+
+
+.footer{
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: darkgreen;
 }
