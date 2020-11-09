@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     font-family:'Lato',Helvetica,Arial,Lucida,sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -214,7 +215,6 @@ height: 800px;
     position: absolute;
     display: block;
     background-color:#E02B20 ;
-    height: 50;
     width: 50%;
     right:0;
     color: white;
@@ -244,6 +244,14 @@ height: 800px;
     text-align-last: justify;
 }
 
+.aboutUsBackground{
+    
+    background-color: white;
+}
+.aboutUsLine{
+    background-color: white;
+    height: 20px;
+}
 .clubPicture{
     margin-left: 10%;
     z-index: -2;
@@ -277,13 +285,20 @@ height: 800px;
     max-width: 1200px;
     margin-right: 10%;
     margin-left: 10%;
-
 }
 
-@media only screen and (max-width:1800px){
-    
+@media only screen and (max-width:1800px){   
         .aboutUs{width: 35%;}
 }
+@media only screen and (max-width:1300px){
+    .aboutUsBackground{display: none;}
+    .aboutUsLine{display: none;}
+}
+@media only screen and (min-width:2000px){   
+    .aboutUsBackground{display: none;}
+    .aboutUsLine{display: none;}
+}
+
 
 @media only screen and (max-width:800px){
         .aboutUs{
