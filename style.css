@@ -113,7 +113,7 @@ margin-left: 50%;
 }
 
 .introText{
-    font-size: 8em;
+    font-size: 6em;
     color: rgb(50, 50, 50);
     margin-bottom: 0px;
 }
@@ -121,6 +121,7 @@ margin-left: 50%;
 .subText{
     margin-top: 2em;
     color:rgb(70, 70, 70);
+    margin-bottom: 0px;
 }
 
 .tryoutButton{
@@ -132,7 +133,9 @@ margin-left: 50%;
     background: #E02B20;
     color: white;
     line-height: 5em;
-    margin-bottom: 10em;
+    margin-bottom: 2em;
+
+
 }
 
 .tryoutButton p {
@@ -173,6 +176,12 @@ margin-left: 50%;
     text-align-last: justify;
 }
 
+.background2Container{
+    transform: translateY(-300px);
+    position: relative;
+    z-index: -2;
+}
+
 .background2{
     margin-top: 5em;
     background-image: url(black-and-white-pagoda.png);
@@ -193,39 +202,123 @@ height: 800px;
 }
 
 
+
+.aboutUsContainer{
+    transform: translateY(-500px);
+    height: 100%;
+}
+
+
 .aboutUs{
     z-index: -5;
     position: absolute;
     display: block;
     background-color:#E02B20 ;
-    float: right;
-    height: 60em;
+    height: 50;
     width: 50%;
     right:0;
+    color: white;
     transform: translateY(-200px);
 
 }
 
+.aboutUs h1{ 
+    font-family: 'PT Serif',Georgia,"Times New Roman",serif;
+    margin: 10%;
+    margin-bottom: 5%;
+    margin-left: 20%;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.aboutUs p{
+    margin: 10%;
+    margin-top: 5%;
+    margin-left: 20%;
+
+    font-size: 19px;            
+    color:white;
+    line-height: 1.8em;
+    word-spacing: 3px;        
+    text-align: justify;
+    text-align-last: justify;
+}
+
 .clubPicture{
+    margin-left: 10%;
     z-index: -2;
-    position: absolute;
+    position: relative;
     border: 5px solid white;
-    max-width: 60%;
+    width: 60%;
+    min-width: 20em;
     box-shadow: -10px 10px 30px 0px darkgray;
+    max-width: 800px;
+}
+
+.visitUs{
+    display: block;
+    background-color: #E02B20;
+    width: 20em;
+    height: 4em;
+    position: absolute;
+    z-index: -1;
+    border: 5px solid white;
+    margin-right: 20%;
+    transform: translateY(-100px);
+}
+
+.visitUs p {
+    color: rgb(245, 245, 245);
+    text-align: center;
+    font-weight: 600;
+}
+
+.clubPictureContainer{
+    max-width: 1200px;
+    margin-right: 10%;
+    margin-left: 10%;
+
+}
+
+@media only screen and (max-width:1800px){
     
+        .aboutUs{width: 35%;}
 }
 
-.aboutUsContainer{
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-}
+@media only screen and (max-width:800px){
+        .aboutUs{
+            display: block;
+            position: relative;
+            margin-left:auto;
+            margin-right: auto;
+            padding: 2.5em;
+            width: 80%;
+            height: 100%;
+        }
+        
+        .aboutUs h1 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 10%;
 
-
-
-
-
-
+        }
+        
+        .aboutUs p {
+            margin: 0;
+            font-size: 19px;
+            color:white;
+            line-height: 1.8em;
+            word-spacing: 3px;
+        
+            /*Makes the text go to the edges*/
+            text-align: justify;
+            text-align-last: justify;
+        }
+        .clubPictureContainer{
+            display: none;
+        }
+    }
 
 
 
@@ -277,6 +370,6 @@ height: 800px;
 .footer{
     bottom: 0;
     width: 100%;
-    height: 2.5rem;
+    height: 2.5em;
     background-color: darkgreen;
 }
